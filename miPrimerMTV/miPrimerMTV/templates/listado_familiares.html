@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT-Sandra-Auditore</title>
+</head>
+<body>
+    <h1>MVT Sandra Auditore</h1>
+    <p> Ellas son algunas de mis familiares:</p>
+    
+    <ul>
+        {% for familiares in listado_familiares%}
+       
+        <li>
+           {{familiares}}
+        </li>
+              
+        {% endfor%}
+    </ul>
+    
+
+
+</body>
+</html>

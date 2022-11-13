@@ -1,12 +1,28 @@
+from datetime import datetime
+
+from appcoder.models import Familiares
 from django.http import HttpResponse
 from django.shortcuts import render
-from appcoder.models import Familiares
-from datetime import datetime
+from django.template import loader
+
 # Create your views here.
 
 
-def inicio(request): 
-    return HttpResponse("Ellas son parte integrante de mi familia")
 
-def familiares(request):
-     return HttpResponse("Ellas son mis sobrinas ")
+def listadoFamiliares(request):
+    
+    listadoFamiliares = Familiares.objects.all()
+
+    datos = {'listadoFamiliares': listadoFamiliares}
+
+    plantilla= loader.get_template("coder/familiares.html")
+
+    documento = plantilla.render(datos)
+
+    return HttpResponse(documento)
+    
+    
+    
+    
+    
+    

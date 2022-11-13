@@ -1,8 +1,13 @@
-from django.urls import path, include
-from appcoder.views import *
+from django.urls import path
+
+from appcoder import views
+
+
+
 
 urlpatterns = [
-    path('', inicio),
-    path('familiares/', familiares),
+    
+    path('familiares/', views.familiares)
+    
 ]
 

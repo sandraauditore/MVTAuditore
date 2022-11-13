@@ -55,7 +55,7 @@ ROOT_URLCONF = 'miPrimerMTV.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"\Users\Sandra Auditore\Desktop\coder\coderProyecto\miPrimerMTV\miPrimerMTV\templatesr"],
+        'DIRS': [r'C:\Users\Sandra Auditore\Desktop\coder\coderProyecto\miPrimerMTV\miPrimerMTV\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

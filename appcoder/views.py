@@ -15,9 +15,9 @@ def listadoFamiliares(request):
 
     datos = {'listadoFamiliares': listadoFamiliares}
 
-    plantilla = loader.get_template("coder/familiares.html")
+    template = loader.get_template("appcoder/familiares.html")
 
-    documento = plantilla.render(datos)
+    documento = template.render(datos)
 
     return HttpResponse(documento)
     

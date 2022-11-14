@@ -8,6 +8,37 @@
 </head>
 <body>
     
+<h1>Ellas son algunas de mis familiares</h1>
+
+<table>                                               
+<tr>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Profesion</th>
+<th>Edad</th>
+<th>Fecha de nacimiento</th>
+</tr>
+    {% for Familiares in listadoFamiliares%}
+<tr>
+
+   <td> {{Familiares.nombre}}  </td> 
+   <td> {{Familiares.apellido}} </td> 
+   <td> {{Familiares.profesion}} </td> 
+    <td> {{Familiares.Edad}}</td>
+    <td> {{Familiares.Fecha_nacimiento}} </td>
+    
+    
+</tr>
+       
+    {%endfor%}
+    
+
+
+
+
+
+
+</table>
 
 
 </body>
